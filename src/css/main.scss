@@ -235,7 +235,7 @@ a { color: inherit; text-decoration: none; }
   border: none; color: var(--bg-dark); background: var(--hi);
   display: grid; place-items: center; font-size: 1.1rem;
 }
-.review-btn.prev{ left: .5rem; }
+.review-btn.prev{ left: .5rem; z-index: 3;}
 .review-btn.next{ right: .5rem; }
 .review-btn:hover{ filter: brightness(.95); }
 
