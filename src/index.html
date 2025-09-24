@@ -1,13 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deccan Dawat — Hyderabad Kitchen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  </head>
+  <body>
+    <header id="site-header">
+      <!-- === NAVBAR === -->
+      <nav class="nav">
+        <a class="brand" href="#main">
+          <img class="brand-logo" src="./assets/logo.jpg" alt="Logo" />
+          <span>Deccan Dawat</span>
+        </a>
+        <ul class="nav-list">
+          <li><a href="#main">Home</a></li>
+          <li><a href="#dishes">Highlights</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- === MAIN === -->
+      <section id="main" class="stripe main">
+        <div class="main-content reveal">
+          <h1>Deccan Dawat</h1>
+          <p class="subheading">Hyderabad on a plate — biryani, kebabs, and kormas crafted with slow fire &amp; bold spice.</p>
+        </div>
+      </section>
+
+      <!-- === HIGHLIGHTS === -->
+      <section id="dishes" class="stripe">
+        <div class="container">
+          <h2 class="reveal">Highlights</h2>
+          <p class="muted reveal">Traditional flavors from the City of Pearls.</p>
+
+          <div class="cards dish-grid" role="list">
+            <article class="card dish-card reveal" role="listitem">
+              <a class="card-btn" href="#modal-haleem">
+                <img src="./assets/mutton-haleem.jpg" alt="Mutton Haleem" />
+                <h3>Mutton Haleem</h3>
+              </a>
+            </article>
+            <article class="card dish-card reveal" role="listitem">
+              <a class="card-btn" href="#modal-tangdi">
+                <img src="./assets/chicken-tangdi.jpg" alt="Tangdi Kabab" />
+                <h3>Tangdi Kabab</h3>
+              </a>
+            </article>
+            <article class="card dish-card reveal" role="listitem">
+              <a class="card-btn" href="#modal-marag">
+                <img src="./assets/marag.jpg" alt="Marag" />
+                <h3>Marag</h3>
+              </a>
+            </article>
+            <article class="card dish-card reveal" role="listitem">
+              <a class="card-btn" href="#modal-dumkamurgh">
+                <img src="./assets/dum-ka-murgh.jpg" alt="Dum ka Murgh" />
+                <h3>Dum ka Murgh</h3>
+              </a>
+            </article>
+            <article class="card dish-card reveal" role="listitem">
+              <a class="card-btn" href="#modal-biryani">
+                <img src="./assets/mutton-biryani.jpg" alt="Mutton Biryani" />
+                <h3>Mutton Biryani</h3>
+              </a>
+            </article>
+            <article class="card dish-card reveal" role="listitem">
+              <a class="card-btn" href="#modal-dkm">
+                <img src="./assets/double-ka-meetha.jpg" alt="Double ka Meetha" />
+                <h3>Double ka Meetha</h3>
+              </a>
+            </article>
+          </div>
+        </div>
+
+        <!-- === (Modals) === -->
+        <div class="modal" id="modal-haleem" aria-hidden="true">
+          <a href="#dishes" class="modal-backdrop" aria-label="Close modal"></a>
+          <div class="modal-dialog" role="dialog" aria-modal="true">
+            <a href="#dishes" class="modal-close" aria-label="Close">×</a>
+            <h3 class="modal-title">Mutton Haleem</h3>
+            <img class="modal-img" src="./assets/mutton-haleem.jpg" alt="" />
+            <p class="modal-desc">Slow-cooked wheat, lentils, and mutton beaten to a silky porridge; garam masala, fried onions, and ghee finish.</p>
+          </div>
+        </div>
+
+        <div class="modal" id="modal-tangdi" aria-hidden="true">
+          <a href="#dishes" class="modal-backdrop" aria-label="Close modal"></a>
+          <div class="modal-dialog" role="dialog" aria-modal="true">
+            <a href="#dishes" class="modal-close" aria-label="Close">×</a>
+            <h3 class="modal-title">Tangdi Kabab</h3>
+            <img class="modal-img" src="./assets/chicken-tangdi.jpg" alt="" />
+            <p class="modal-desc">Yogurt, ginger-garlic, and warm spices marinate chicken legs; roasted for a smoky, juicy bite.</p>
+          </div>
+        </div>
+
+        <div class="modal" id="modal-marag" aria-hidden="true">
+          <a href="#dishes" class="modal-backdrop" aria-label="Close modal"></a>
+          <div class="modal-dialog" role="dialog" aria-modal="true">
+            <a href="#dishes" class="modal-close" aria-label="Close">×</a>
+            <h3 class="modal-title">Marag</h3>
+            <img class="modal-img" src="./assets/marag.jpg" alt="" />
+            <p class="modal-desc">Light mutton soup simmered with bones; cardamom, pepper, and green chilies for gentle warmth.</p>
+          </div>
+        </div>
+
+        <div class="modal" id="modal-dumkamurgh" aria-hidden="true">
+          <a href="#dishes" class="modal-backdrop" aria-label="Close modal"></a>
+          <div class="modal-dialog" role="dialog" aria-modal="true">
+            <a href="#dishes" class="modal-close" aria-label="Close">×</a>
+            <h3 class="modal-title">Dum ka Murgh</h3>
+            <img class="modal-img" src="./assets/dum-ka-murgh.jpg" alt="" />
+            <p class="modal-desc">Chicken cooked on dum with browned onions and cashew paste — creamy, fragrant, and rich.</p>
+          </div>
+        </div>
+
+        <div class="modal" id="modal-biryani" aria-hidden="true">
+          <a href="#dishes" class="modal-backdrop" aria-label="Close modal"></a>
+          <div class="modal-dialog" role="dialog" aria-modal="true">
+            <a href="#dishes" class="modal-close" aria-label="Close">×</a>
+            <h3 class="modal-title">Mutton Biryani</h3>
+            <img class="modal-img" src="./assets/mutton-biryani.jpg" alt="" />
+            <p class="modal-desc">Aged basmati layered with tender mutton and saffron; sealed and steamed for separate, aromatic grains.</p>
+          </div>
+        </div>
+
+        <div class="modal" id="modal-dkm" aria-hidden="true">
+          <a href="#dishes" class="modal-backdrop" aria-label="Close modal"></a>
+          <div class="modal-dialog" role="dialog" aria-modal="true">
+            <a href="#dishes" class="modal-close" aria-label="Close">×</a>
+            <h3 class="modal-title">Double ka Meetha</h3>
+            <img class="modal-img" src="./assets/double-ka-meetha.jpg" alt="" />
+            <p class="modal-desc">Fried bread in cardamom syrup, finished with thickened milk and nuts — toasty and festive.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- === ABOUT === -->
+      <section id="about" class="stripe about">
+        <video class="about-bg" src="./assets/kitchen.mp4" autoplay muted loop playsinline></video>
+        <div class="about-overlay"></div>
+        <div class="container about-content reveal">
+          <h2>About</h2>
+          <p>At Deccan Dawat, authenticity matters. We slow-cook, hand-grind, and layer flavors with the same patience that has defined Hyderabadi cooking for centuries. Each dish is carefully prepared to highlight the depth and richness of our culinary heritage.</p>
+          <p>From the first sip of Irani chai to the last bite of Double ka Meetha, we bring the city’s spirit to your plate.</p>
+        </div>
+
+        <!-- === 3 Column Feature === -->
+        <div class="container">
+          <div class="features-panel reveal">
+            <div class="feature">
+              <div class="feature-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+              <h3 class="feature-title">Slow Dum</h3>
+              <p class="feature-text">Sealed pots and gentle heat deepen flavor while rice stays fragrant and separate.</p>
+            </div>
+            <div class="feature">
+              <div class="feature-icon"><i class="fa-solid fa-seedling"></i></div>
+              <h3 class="feature-title">Fresh Masalas</h3>
+              <p class="feature-text">Stone-pounded spices, fried onions, and ghee tempering — balanced heat.</p>
+            </div>
+            <div class="feature">
+              <div class="feature-icon"><i class="fa-solid fa-gift"></i></div>
+              <h3 class="feature-title">Festive Finish</h3>
+              <p class="feature-text">From haleem to Double ka Meetha, every plate feels like a celebration.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews carousel -->
+      <section id="reviews" class="stripe">
+        <div class="container">
+          <h2 class="reveal">Reviews</h2>
+          <div class="review-carousel reveal">
+            <div class="review-viewport">
+              <button class="review-btn prev">‹</button>
+              <div class="review-track">
+                <figure class="review">
+                  <blockquote>“Authentic Hyderabadi spice levels — finally a place that doesn’t hold back!”</blockquote>
+                  <cite>— Ayesha R.</cite>
+                </figure>
+                <figure class="review">
+                  <blockquote>“The haleem was rich, silky, and comforting. A must-try dish here.”</blockquote>
+                  <cite>— Imran K.</cite>
+                </figure>
+                <figure class="review">
+                  <blockquote>“The biryani was heavenly — fragrant rice with perfectly tender meat. Best I’ve had outside Hyderabad!”</blockquote>
+                  <cite>— Priya M.</cite>
+                </figure>
+              </div>
+              <button class="review-btn next">›</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="stripe footer">
+      <p>Follow Us!</p>
+      <div class="social">
+        <a class="social-link" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a class="social-link" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a class="social-link" href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </footer>
+  </body>
 </html>
